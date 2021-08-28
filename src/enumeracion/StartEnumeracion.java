@@ -5,8 +5,12 @@ public class StartEnumeracion {
         //System.out.println( Dias .DOMINGO );
         //indicarDiaSemana( Dias .DOMINGO );
 
-        System.out.println( "No. paises de " + Continentes .EUROPA + " es: " + Continentes .EUROPA .getPaises() );
-        System.out.println( "No. paises de " + Continentes .AMERICA + " es: " + Continentes .AMERICA .getPaises() );
+        // System.out.println( "No. paises de " + Continentes .EUROPA + " es: " + Continentes .EUROPA .getPaises() );
+        // System.out.println( "No. paises de " + Continentes .AMERICA + " es: " + Continentes .AMERICA .getPaises() );
+
+        for ( Continentes continente : Continentes .values() ) {
+            System.out.println( "No. paises de " + continente + " es: " + continente .getNumeroPaises() + " con una superficie de " + continente .getInfoSuperficie() );
+        }
     }
 
     private static void indicarDiaSemana( Dias dias ) {
