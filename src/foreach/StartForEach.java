@@ -7,6 +7,19 @@ public class StartForEach {
         for( String fruta : frutas ) {
             System.out.println( " - " + fruta );
         }
+        System.out.println( "" );
+
+        Persona personas[] = {
+            new Persona( "Manuela" ),
+            new Persona( "Juan" ),
+            new Persona( "Carlos" )
+        };
+
+        for( Persona persona : personas ) {
+            System .out .println( persona );
+        }
+        System.out.println( "" );
+
     }
 }
 
